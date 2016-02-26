@@ -18,8 +18,8 @@ node[:deploy].each do |application, deploy|
   end
   
   #clean up any existing resque upstart files
-  file '/etc/init/{resque-.*-\d*.conf}' do
-    action delete
+  file '/etc/init/{resque-#{application}.*-\d*.conf}' do
+    action :delete
   end
 
   settings = node[:resque][application]
