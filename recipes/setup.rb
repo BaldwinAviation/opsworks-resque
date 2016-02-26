@@ -18,7 +18,7 @@ node[:deploy].each do |application, deploy|
   end
   
   #clean up any existing resque upstart files
-  file '/etc/init/{resque-#{application}.*-\d*.conf}' do
+  file '/etc/init/{resque-baldwin-\d*.conf}' do
     action :delete
   end
 
