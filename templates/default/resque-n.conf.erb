@@ -4,7 +4,7 @@ respawn
 start on starting resque-<%= @application %>
 stop on stopping resque-<%= @application %>
 
-env QUEUE=<%= @queue %>
+env QUEUE="<%= @queue %>"
 env RACK_ENV=<%= @rack_env %>
 env TERM_CHILD=1
 
