@@ -1,6 +1,6 @@
 source "https://api.berkshelf.com"
 
-cookbook 'build-essential', '~> 1.4.4'
+cookbook 'build-essential', '= 3.2.0'
 
 cookbook "opsworks_commons", git: "https://github.com/aws/opsworks-cookbooks.git", branch: "release-chef-11.4", rel: "opsworks_commons"
 
